@@ -1,0 +1,412 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-size: 16px;
+    color: black;
+    background-color: rgb(255, 255, 255);
+    font-family: verdana;
+}
+
+.container {
+    width: 100%;
+    height: auto;
+}
+
+/*start topbar*/
+.topbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: auto;
+    height: 80px;
+    background-color: rgb(250, 255, 253);
+    box-shadow: 1px 2px 8px rgba(23, 153, 103, 0.479);
+    position: fixed;
+    top: 0;
+}  
+input{
+    display: none;
+   }
+   label{
+    display: none;
+   }
+.topbar_logo img {
+    border-radius: 50%;
+    margin-left: 20px;
+}
+
+.topbar_title h2 {
+    font-size: 28px;
+    font-weight: bold;
+    color: rgb(23, 153, 103);
+}
+
+.tapbar_nav nav ul {
+    list-style: none;
+    margin-right: 50px;
+}
+
+.tapbar_nav nav ul li {
+    display: inline-block;
+}
+
+.tapbar_nav nav ul li a {
+    text-decoration: none;
+    padding: 10px 10px;
+    color: black;
+    font-weight: 700;
+}
+
+.tapbar_nav nav ul li a:hover {
+    color: black;
+    background-color: rgb(1, 179, 10);
+    border-radius: 5px;
+    transition: .5s;
+}
+
+.button1 {
+    padding: 10px 15px;
+    color: black;
+    background-color: rgb(23, 153, 103);
+    border: none;
+    border-radius: 15px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    color: aliceblue;
+}
+
+.button1:hover {
+    background-color: rgb(1, 179, 10);
+    transform: scale(0.9);
+    transition: 1s;
+}
+/*end topbar*/
+/*header section*/
+.header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(127, 179, 129, 0.226);
+    row-gap: 40px;
+    padding: 100px;
+    margin-top: 80px;
+}
+
+.header_title {
+    width: 50%;
+}
+
+.header_img {
+    width: 50%;
+}
+
+.header_title p {
+    color: brown;
+    padding: 15px 0;
+}
+
+.header_title h2 {
+    padding-bottom: 15px;
+}
+
+.header_title h3 {
+    padding-bottom: 15px;
+}
+
+.header_title h3 span {
+    color: rgb(23, 153, 103);
+}
+
+.header_title span {
+    line-height: 1.7;
+}
+
+.header_title button {
+    margin-top: 15px;
+}
+
+.header_img img {
+    border-radius: 10px;
+}
+/*end header section*/
+/*aside section*/
+.aside {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    padding: 50px 100px;
+}
+
+.aside_box {
+    width: 25%;
+}
+
+.aside_box:hover {
+    box-shadow: 2px 3px 7px 4px rgba(0, 0, 0, 0.37);
+    cursor: pointer;
+    transform: scale(.9);
+    transition: all .5s;
+}
+
+.active_shadow {
+    box-shadow: 2px 3px 7px 4px rgba(0, 0, 0, 0.37);
+}
+
+.aside_img img {
+    max-width: 70px;
+    height: 70px;
+    padding: 10px;
+}
+
+.img_des {
+    padding: 20px;
+}
+
+.img_des h4 {
+    padding: 15px;
+}
+
+.img_des h5 {
+    padding: 10px;
+}
+/*end aside section*/
+/* course section css*/
+.course {
+    background-color: rgba(173, 223, 173, 0.411);
+}
+
+hr {
+    margin: 0 400px;
+}
+
+.course_title h3 {
+    padding: 30px 0;
+}
+
+.course_img img {
+    border-radius: 10px;
+    max-width: 200px;
+    height: 200px;
+    padding: 10px;
+    text-align: center;
+}
+
+.course_box {
+    width: 30%;
+    box-shadow: 2px 3px 10px 4px rgba(0, 0, 0, 0.37);
+}
+
+.button2 {
+    padding: 10px 15px;
+    color: black;
+    background-color: rgb(23, 153, 103);
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.button2:hover {
+    background-color: rgb(1, 179, 10);
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+.course_des {
+    text-align: left;
+}
+
+.course_des h4 {
+    padding: 10px 40px;
+    text-align: left;
+}
+
+.course_des h5 {
+    padding: 10px 40px;
+    text-align: left;
+}
+
+.course_des .button2 {
+    margin-bottom: 30px;
+    margin-top: 10px;
+    margin-left: 40px;
+    color: aliceblue;
+}
+/* course section css*/
+/* footer section css*/
+.footer{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20px;
+    background-color: rgba(0, 0, 0, 0.733);
+    padding: 50px;
+}
+.footer ul{
+    list-style: none;
+}
+.footer ul li{
+    padding: 10px;
+}
+.footer ul li a{
+   color: aliceblue;
+   text-decoration: none;
+   padding: 10px;
+   font-size: 14px;
+}
+.footer ul li a:hover{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    border-radius: 5px;
+    text-decoration: underline;
+ }
+.link h2{
+    color: aliceblue;
+    font-size: 20px;
+    display: inline;
+    padding-left: 20px;
+}
+.bottomfooter{
+    height: 50px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.733);
+    text-align: center;
+    font-size: 17px;
+    font-weight: 300;
+    color: white;
+}
+/* end footer section css*/
+
+
+/*start for mobile device*/
+@media screen and (max-width:700px) {
+
+    .topbar {
+        display: flex;
+        flex-direction: row;
+        height: 100px;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .topbar_logo img {
+        display: none;
+    }
+    .button1 {
+        display: block;
+    }
+
+    .header {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .header_title {
+        width: 100%;
+    }
+
+    .header_img {
+        width: 100%;
+    }
+
+
+    .aside {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+        padding: 50px 100px;
+    }
+
+    .aside_box {
+        width: 100%;
+    }
+
+    .course_box {
+        width: 100%;
+    }
+
+    .course_title h3 {
+        text-align: center;
+    }
+    .footer{
+        display: flex;
+        flex-direction: column;
+    }
+    .link{
+        margin-top: 20px;
+    }
+    .bottomfooter{
+        height: 50px;
+        width: 100%;
+        font-size: 14px;
+        color: white;
+        background-color: rgba(0, 0, 0, 0.801);
+        padding: 20px;
+    }
+    .bar{
+        display: block;
+    }
+    input{
+        display: block;
+    }
+  .fa-solid , .fa-bars{
+        font-size: 30px;
+    }
+   nav ul {
+        width: 100%;
+        height: 230px;
+        background-color: rgb(255, 255, 255);
+        position: fixed;
+        top: 100px;
+        left: -100%; /* Change this to -100% to hide the nav by default */
+        transition: all .5s;
+        border-top: 1px solid;
+      }
+      
+      #check:checked ~ .tapbar_nav nav ul {
+        left: 0%; /* When the checkbox is checked, move the nav to the right */
+      }
+      .tapbar_nav{
+        text-align: center;
+      }
+    .button1{
+       margin-top: 10px;
+    }
+    .tapbar_nav nav ul li a:hover{
+        background-color: rgba(184, 189, 187, 0.658);
+    }
+   input{
+    display: none;
+   }
+   .button1{
+    display: none;
+   }
+    .tapbar_nav nav ul li{
+       display: block;
+       text-align: center;
+    }
+    .tapbar_nav nav ul li a{
+        display: block;
+        margin-top: 10px;
+     }
+     label{
+        display: block;
+     }
+    
+}
