@@ -263,11 +263,13 @@ hr {
 /* footer section css*/
 .footer {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
+    text-align: center;
     column-gap: 20px;
-    background-color: rgba(0, 0, 0, 0.788);
-    padding: 50px;
+    padding: 50px 100px;
+    width: 100%;
+    background-color: rgba(10, 10, 10, 0.678);
 }
 
 .footer ul {
@@ -275,14 +277,16 @@ hr {
 }
 
 .footer ul li {
-    padding: 10px;
+    padding: 10px 10px;
 }
-
+.link{
+    width: 33.2%;
+}
 .footer ul li a {
     color: aliceblue;
     text-decoration: none;
-    padding: 10px 0px;
-    font-size: 14px;
+
+    font-size: 12px;
 }
 
 .footer ul li a:hover {
@@ -500,5 +504,14 @@ hr {
         height: auto;
 
     }
-
+    .footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        text-align: center;
+        padding: 50px 20px;
+        width: 100%;
+        background-color: rgba(12, 12, 12, 0.678);
+    }
 }
