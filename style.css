@@ -13,9 +13,6 @@ body {
     color: black;
     background-color: rgb(255, 255, 255);
     font-family: verdana;
-}
-
-.container {
     width: 100%;
     height: auto;
 }
@@ -27,10 +24,9 @@ body {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    margin: auto;
     height: 80px;
     background-color: rgb(250, 255, 253);
-    box-shadow: 1px 2px 8px rgba(23, 153, 103, 0.479);
+    box-shadow: 1px 2px 8px rgba(56, 56, 56, 0.479);
     position: fixed;
     top: 0;
 }
@@ -56,7 +52,7 @@ label {
 
 .tapbar_nav nav ul {
     list-style: none;
-    margin-right: 50px;
+    margin-right: 20px;
 }
 
 .tapbar_nav nav ul li {
@@ -72,9 +68,10 @@ label {
 
 .tapbar_nav nav ul li a:hover {
     color: black;
-    background-color: rgb(1, 179, 10);
+    background-color: rgb(23, 153, 103);
     border-radius: 5px;
     transition: .5s;
+    color: white;
 }
 
 .button1 {
@@ -99,12 +96,13 @@ label {
 /*header section*/
 .header {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
-    background-color: rgba(127, 179, 129, 0.226);
-    row-gap: 40px;
+    background-color: rgba(0, 255, 8, 0.15);
     padding: 100px;
+    width: 100%;
     margin-top: 80px;
+    column-gap: 20px;
 }
 
 .header_title {
@@ -113,6 +111,11 @@ label {
 
 .header_img {
     width: 50%;
+}
+
+.header_img img {
+    width: 100%;
+    height: auto;
 }
 
 .header_title p {
@@ -129,7 +132,7 @@ label {
 }
 
 .header_title h3 span {
-    color: rgb(23, 153, 103);
+    color: rgb(0, 85, 52);
 }
 
 .header_title span {
@@ -151,9 +154,12 @@ label {
     justify-content: space-around;
     align-items: center;
     text-align: center;
-    gap: 20px;
+    column-gap: 20px;
     padding: 50px 100px;
+    width: 100%;
+    background-color: rgba(243, 239, 247, 0.678);
 }
+
 
 .aside_box {
     width: 25%;
@@ -191,7 +197,7 @@ label {
 /*end aside section*/
 /* course section css*/
 .course {
-    background-color: rgba(173, 223, 173, 0.411);
+    background-color: rgb(250, 253, 250);
 }
 
 hr {
@@ -259,8 +265,8 @@ hr {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    gap: 20px;
-    background-color: rgba(0, 0, 0, 0.733);
+    column-gap: 20px;
+    background-color: rgba(0, 0, 0, 0.788);
     padding: 50px;
 }
 
@@ -275,7 +281,7 @@ hr {
 .footer ul li a {
     color: aliceblue;
     text-decoration: none;
-    padding: 10px;
+    padding: 10px 0px;
     font-size: 14px;
 }
 
@@ -288,19 +294,20 @@ hr {
 
 .link h2 {
     color: aliceblue;
-    font-size: 20px;
+    font-size: 18px;
     display: inline;
-    padding-left: 20px;
+    padding-left: 10px;
 }
 
 .bottomfooter {
     height: 50px;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.733);
+    background-color: rgba(0, 0, 0, 0.822);
     text-align: center;
-    font-size: 17px;
+    font-size: 15px;
     font-weight: 300;
     color: white;
+    line-height: 50px;
 }
 
 /* end footer section css*/
@@ -312,9 +319,11 @@ hr {
     .topbar {
         display: flex;
         flex-direction: row;
-        height: 100px;
+        height: 80px;
         justify-content: space-around;
         align-items: center;
+        width: 100%;
+        
     }
 
     .topbar_logo img {
@@ -328,6 +337,8 @@ hr {
     .header {
         display: flex;
         flex-direction: column;
+        width: 100%;
+        padding: 20px;
     }
 
     .header_title {
@@ -338,6 +349,39 @@ hr {
         width: 100%;
     }
 
+    .header_img img {
+        width: 100%;
+        height: auto;
+    }
+
+    .header_title p {
+        color: brown;
+        padding: 10px 0;
+    }
+
+    .header_title h2 {
+        padding-bottom: 10px;
+    }
+
+    .header_title h3 {
+        padding-bottom: 10px;
+    }
+
+    .header_title h3 span {
+        color: rgb(0, 85, 52);
+    }
+
+    .header_title span {
+        line-height: 1.5;
+    }
+
+    .header_title button {
+        margin-top: 10px;
+    }
+
+    .header_img img {
+        border-radius: 10px;
+    }
 
     .aside {
         display: flex;
@@ -346,7 +390,9 @@ hr {
         align-items: center;
         text-align: center;
         gap: 20px;
-        padding: 50px 100px;
+        padding: 50px 20px;
+        width: 100%;
+        height: auto;
     }
 
     .aside_box {
@@ -364,6 +410,7 @@ hr {
     .footer {
         display: flex;
         flex-direction: column;
+        width: 100%;
     }
 
     .link {
@@ -376,7 +423,7 @@ hr {
         font-size: 14px;
         color: white;
         background-color: rgba(0, 0, 0, 0.801);
-        padding: 20px;
+        line-height: 50px;
     }
 
     .bar {
@@ -426,7 +473,8 @@ hr {
     }
 
     .button1 {
-        display: none;
+        display: block;
+        margin-bottom: 20px;
     }
 
     .tapbar_nav nav ul li {
@@ -441,6 +489,16 @@ hr {
 
     label {
         display: block;
+    }
+
+    .btn {
+        display: none;
+    }
+
+    body {
+        width: 100%;
+        height: auto;
+
     }
 
 }
